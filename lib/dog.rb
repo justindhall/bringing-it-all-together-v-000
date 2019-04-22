@@ -89,7 +89,7 @@ class Dog
       SELECT * FROM dogs WHERE name = ? AND breed = ? LIMIT 1
     SQL
 
-    dog = DB[:conn].execute(sql, self.name, self.br)
+    dog = DB[:conn].execute(sql, name, breed)
   end
 
 end
